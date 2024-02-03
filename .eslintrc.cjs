@@ -8,11 +8,15 @@ module.exports = {
 		'prettier'
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint'],
+	plugins: ['@typescript-eslint', 'perfectionist'],
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
 		extraFileExtensions: ['.svelte']
+	},
+	rules: {
+		// "sort-svelte-attributes": "error",
+		// "sort-attributes": "error",
 	},
 	env: {
 		browser: true,
